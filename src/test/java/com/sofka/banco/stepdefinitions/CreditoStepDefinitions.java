@@ -10,6 +10,7 @@ public class CreditoStepDefinitions {
 
     private Credito credito;
     private String resultado;
+    private double cantidadPrestada;
 
     @Given("^quiero un prestamo de libre inversion$")
     public void quieroUnPrestamoDeLibreInversion() {
@@ -23,7 +24,6 @@ public class CreditoStepDefinitions {
 
     @Then("^deberia obtener el mensaje de aprobacion \"([^\"]*)\"$")
     public void deberiaObtenerElMensajeDeAprobacion(String mensaje) {
-        // Write code here that turns the phrase above into concrete actions
         Assert.assertEquals(mensaje,resultado);
     }
 
@@ -34,8 +34,23 @@ public class CreditoStepDefinitions {
 
     @Then("^deberia obtener el mensaje de negacion \"([^\"]*)\"$")
     public void deberiaObtenerElMensajeDeNegacion(String mensaje) {
-        // Write code here that turns the phrase above into concrete actions
         Assert.assertEquals(mensaje,resultado);
     }
+
+    @Given("^quiero conocer el valor que se me puede prestar$")
+    public void quieroConocerElValorQueSeMePuedePrestar() {
+        credito = new Credito();
+    }
+
+    @When("^con un salario de (\\d+)$")
+    public void conUnSalarioDe(double salario) {
+        cantidadPrestada = credito.calcularMontoPrestamo(salario);
+    }
+
+    @Then("^el banco deberia prestarme (\\d+)$")
+    public void elBancoDeberiaPrestarme(double cantidadPrestadaEsperada) {
+        Assert.assertEquals(cantidadPrestadaEsperada,cantidadPrestada,2);
+    }
+
 
 }
