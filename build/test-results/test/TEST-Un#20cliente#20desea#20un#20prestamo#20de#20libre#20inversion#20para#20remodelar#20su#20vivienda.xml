@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Un cliente desea un prestamo de libre inversion para remodelar su vivienda" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-05T22:22:18" hostname="DESKTOP-P44GADF" time="0.542">
+<testsuite name="Un cliente desea un prestamo de libre inversion para remodelar su vivienda" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-05T22:41:02" hostname="DESKTOP-P44GADF" time="0.532">
   <properties/>
-  <testcase name="El cliente cuenta con un salario mayor o igual a un salario minimo" classname="Un cliente desea un prestamo de libre inversion para remodelar su vivienda" time="0.493"/>
-  <testcase name="El cliente cuenta con un salario menor a un salario minimo" classname="Un cliente desea un prestamo de libre inversion para remodelar su vivienda" time="0.028"/>
+  <testcase name="El cliente cuenta con un salario mayor o igual a un salario minimo" classname="Un cliente desea un prestamo de libre inversion para remodelar su vivienda" time="0.486"/>
+  <testcase name="El cliente cuenta con un salario menor a un salario minimo" classname="Un cliente desea un prestamo de libre inversion para remodelar su vivienda" time="0.027"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Un cliente desea un prestamo de libre inversion para remodelar su vivienda","El cliente cuenta con un salario mayor o igual a un salario minimo","SUCCESS","2021-10-05T17:41:02.4986704-05:00[America/Bogota]","0.0","0.6"
+"Un cliente desea un prestamo de libre inversion para remodelar su vivienda","El cliente cuenta con un salario menor a un salario minimo","SUCCESS","2021-10-05T17:41:03.1133164-05:00[America/Bogota]","0.0","0.03"
